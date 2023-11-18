@@ -12,9 +12,9 @@
 .head {
     color: #141414;
     font-family: Goudy Old Style;
-    font-size: 52px;
+    font-size: 46px;
     font-weight: 400;
-    padding: 12% 14% 5%;
+    padding: 7% 14% 0%;
 
 }
 
@@ -31,17 +31,19 @@
 .sidebar ul li {
     color: #000;
     font-family: Felix Titling;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin: 0 14%;
     border-bottom: 2px solid #CBCBCB;
-    padding: 8% 0;
+    padding: 6% 0;
     cursor: pointer;
 }
 
 .sidebar ul li span img {
     float: right;
-    margin-top: 4px;
+    margin-top: 3px;
+    width: 11px;
+
 }
 
 .sidebar-small {
@@ -57,15 +59,15 @@
 }
 
 .social {
-    margin: 12% 14%;
+    margin: 14%;
     display: flex;
     justify-content: space-between;
 }
 
 .social img {
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
 }
 
 .otherpart {
@@ -116,4 +118,60 @@
 .modalinpage button span img {
     width: 12px;
     margin-left: 15px;
+}
+@media screen and (max-width :1440px) {
+    .otherpart {
+        padding: 0px 7% 0 0;}
+}
+@media screen and (max-width :1199px)
+{
+    .sidebar ul li {
+        margin: 0 5%;
+    }
+    .head {
+        padding: 12% 5% 5%;
+    }
+.modalinpage h1 {
+    font-size: 60px;}
+.modalinpage {
+    padding: 6% 8%;
+    width: 70%;
+}}
+
+@media screen and (max-width :575px)
+{
+    .sidebar{display: none;}
+    .modalinpage {
+        padding: 7% 12%;
+        width: 85%;
+    box-shadow: 6px 5px 5px #ebebeb;}
+    .otherpart {
+        padding: 0px 0 5% 0;
+        background-size: contain;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .modalinpage h1 {
+        font-size: 50px;text-align: left;
+    }
+}
+@media screen and (max-width :480px)
+{
+    .otherpart {
+        background-size:150%;}
+        .modalinpage h1 {
+            font-size: 40px;}
+
+}
+@media screen and (max-width: 375px){
+.otherpart {
+    background-size: 200%;
+}
+.modalinpage h1 {
+    font-size: 32px;
+}
+.modalinpage button {
+    font-size: 18px;}
+    .modalinpage p {
+        font-size: 15px;}
 }
