@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    background: #E3E3E3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.head {
+    color: #141414;
+    font-family: Goudy Old Style;
+    font-size: 52px;
+    font-weight: 400;
+    padding: 12% 14% 5%;
+
+}
+
+.head span img {
+    padding-bottom: 23px;
+    padding-right: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+
+}
+
+.sidebar ul li {
+    color: #000;
+    font-family: Felix Titling;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 14%;
+    border-bottom: 2px solid #CBCBCB;
+    padding: 8% 0;
+    cursor: pointer;
+}
+
+.sidebar ul li span img {
+    float: right;
+    margin-top: 4px;
+}
+
+.sidebar-small {
+
+    background: rgba(255, 255, 255, 0.90) !important;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.10) !important;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    left: 100%;
+    top: 0;
+    padding-top: 37%;display: none;
+}
+
+.social {
+    margin: 12% 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.otherpart {
+    height: 100vh;
+    background: url(images/df574718bbb6fc67c3d4293bf67e3785.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 12%;
+    justify-content: flex-end;
+}
+
+.modalinpage {
+    background: rgba(255, 255, 255, 0.90);
+    padding: 7% 9%;
+    width: 63%;
+}
+
+.modalinpage h1 {
+    color: #000;
+    font-family: "Felix Titling MT Std";
+    font-size: 65px;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #646464;
+    text-align: center;
+
+}
+
+.modalinpage p {
+    color: #646464;
+    font-family: Roboto;
+    font-size: 18px;
+    padding-top: 6%;
+}
+
+.modalinpage button {
+    font-size: 20px;
+    font-family: "Felix Titling MT Std";
+    background-color: #000;
+    color: #fff;
+    padding: 5% 7%;
+    border: none;
+    margin: 15px 0;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.modalinpage button span img {
+    width: 12px;
+    margin-left: 15px;
+}
