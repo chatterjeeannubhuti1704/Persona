@@ -1,5 +1,5 @@
 let SmallSide= document.getElementById("SmallSide");
-console.log(SmallSide)
+let sideBar=document.getElementById("sideBar");
 let SmallSideShow=true;
 function callSmallSide(){
     console.log("infun")
@@ -11,4 +11,15 @@ function callSmallSide(){
     SmallSide.style.display="none";
     SmallSideShow=true;
  }
+}
+function callsideBar(){
+
+      sideBar.style.display="block";
+}
+function closesideBar(){
+
+   sideBar.style.display="none";
+}
+function closesmallsideBar(){
+   SmallSide.style.display="none";
 }

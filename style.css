@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+.responsive-header{display: none;}
 .sidebar {
     height: 100vh;
     background: #E3E3E3;
@@ -46,6 +46,8 @@
 
 }
 
+.closebtn{display: none;}
+
 .sidebar-small {
 
     background: rgba(255, 255, 255, 0.90) !important;
@@ -55,7 +57,7 @@
     z-index: 999;
     left: 100%;
     top: 0;
-    padding-top: 37%;display: none;
+    padding-top: 7rem;display: none;
 }
 
 .social {
@@ -138,34 +140,69 @@
     width: 70%;
 }}
 
-@media screen and (max-width :575px)
+@media screen and (max-width :578px)
 {
-    .sidebar{display: none;}
+    .sidebar{display: none; 
+        width: 100%;
+        top: -50px;
+        left: 0;
+        position: absolute;
+        z-index: 999;}
+    .responsive-header{display: block;    padding: 3px 10px;
+        width: 100%;
+        background: #e0e0e0;
+        margin: 0 0 -1px 0;
+     }
+     .closebtn{
+        display: block;    float: right;
+     font-size: 14px;
+     color: #fff;
+     background: #000;
+     border-radius: 50%;
+     height: 25px;
+     width: 25px;
+     padding: 5px 8px;
+     margin: 18px 0;}
+     .head {
+        font-size: 40px;
+        padding: 9% 4% 0%;
+        margin-bottom: 5%;
+    }
+    .social {
+        margin: 20% 12% 16% 9%;}
+    .logo{height: 40px;
+        margin: 6px 7px 0px 0px;
+    } .ham-menu{
+        height: 60px;
+        margin: -8px 0px 0px -6px;
+    }
     .modalinpage {
         padding: 7% 12%;
         width: 85%;
     box-shadow: 6px 5px 5px #ebebeb;}
     .otherpart {
-        padding: 0px 0 5% 0;
+        padding: 50% 0 0 0;
         background-size: contain;
         align-items: flex-end;
         justify-content: center;
+        height: auto;
     }
     .modalinpage h1 {
         font-size: 50px;text-align: left;
     }
+    .closebtn2{margin: -52px 17px}
 }
 @media screen and (max-width :480px)
 {
     .otherpart {
-        background-size:150%;}
+        background-size:150%;padding: 70% 0 0 0;}
         .modalinpage h1 {
             font-size: 40px;}
 
 }
 @media screen and (max-width: 375px){
 .otherpart {
-    background-size: 200%;
+    background-size: 200%;padding: 105% 0 0 0;
 }
 .modalinpage h1 {
     font-size: 32px;
@@ -174,4 +211,10 @@
     font-size: 18px;}
     .modalinpage p {
         font-size: 15px;}
+}
+
+@media screen and (max-width: 300px){
+.modalinpage button {
+    font-size: 15px;}
+
 }

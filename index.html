@@ -19,10 +19,16 @@
 
 <body>
     <div class="container-fluid">
+        
         <div class="row">
+            <div class="responsive-header">
+               
+                <img class="ham-menu" onclick="callsideBar()" src="images/hamburger-svgrepo-com.svg" alt="="> <img class="logo" src="images/Subtract.svg" alt="logo">
+            </div>
             <div class="col-lg-3 col-md-4 col-12 pl-0 pr-0">
-                <div class="sidebar">
-                    <h1 class="head"><span><img src="images/Subtract.svg" alt="logo"></span>Persona*</h1>
+                <div class="sidebar" id="sideBar">
+                    <h1 class="head"><span><img src="images/Subtract.svg" alt="logo"></span>Persona*
+                    <span class="closebtn" onclick="closesideBar()">X</span></h1>
                     <ul>
                         <li onclick="callSmallSide()">
                             HOME <span><img src="images/greyarr.svg" alt=">"></span>
@@ -48,6 +54,7 @@
                     </p>
                 </div>
                 <div class="sidebar sidebar-small" id="SmallSide">
+                    <span class="closebtn closebtn2" onclick="closesmallsideBar()">X</span>
                     <ul>
                         <li>
                             HOME <span><img src="images/greyarr.svg" alt=">"></span>
